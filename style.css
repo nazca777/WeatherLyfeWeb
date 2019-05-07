@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+}
+
+header h1 {
+    margin-top: 10px; 
+    color: black;
+    text-align: center;
+    font-weight: 700;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin: 10px 200px;
+    height: 80vh;
+}
+
+.container .areaInput {
+    width: 80%;
+    height: 30px;
+    border: 1px #ecf0f1 solid;
+    border-radius: 20px;
+    box-shadow: -1px 0 #ecf0f1, 0 1px #ecf0f1, 1px 0 #ecf0f1, 0 -1px #ecf0f1;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.submitBtn {
+    width: 10%;
+    margin-bottom: -25px;
+    color: white;
+    background-color: coral;
+    border-radius: 20px;
+    border: 1px coral solid;
+    font-size: 10px;
+    font-weight: 200;
+    padding: 15px;
+}
+
+.submitBtn:hover {
+    background-color: white;
+    color: coral;
+    cursor: pointer;
+}
+
+.image-section {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-section img {
+    height: 150px;
+    width: 160px;
+}
+
+#areaText, #tempText, #typeText {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#tempText {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.cards {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #dfe6e9;
+    border: 1px #dfe6e9 solid;
+    border-radius: 50px;
+}
+
+.cards .lowCard, .highCard, .windCard, .pressureCard {
+    /* border: 2px #ecf0f1 solid; */
+    padding: 20px;
+    font-size: 18px;
+}
+
+.cards .cardText {
+    font-weight: 400;
+}
+
+.highCard .cardImg, .lowCard .cardImg {
+    height: 50px;
+    width: 20px;
+}
+
+.windCard .cardImg, .pressureCard .cardImg {
+    height: 50px;
+    width: 60px;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .container {
+        margin: auto;
+    }
+
+    .container .areaInput {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .submitBtn {
+        width: 20%;
+    }
+
+    
+}

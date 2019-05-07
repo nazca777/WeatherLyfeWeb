@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>WeatherLyfe</h1>
+    </header>
+    <div class="container">
+        <input type="text" class="areaInput"
+        placeholder="Enter a city's weather you want to check">
+        <input type="submit" name="" id="" class="submitBtn">
+        <div class="weather-section">
+            <div class="image-section">
+                <img id="mainImg">
+            </div>
+            <div class="weather-info">
+                <h5 id="areaText"></h5>
+                <h3 id="tempText">Loading...</h3>
+                <h4 id="typeText"></h4>
+            </div>
+            <div class="cards">
+                <div class="highCard">
+                    <img src="assets/high.png" alt="" class="cardImg">
+                    <h5 class="cardText" id="highText"></h5>
+                </div>
+                <div class="lowCard">
+                    <img src="assets/low.png" alt="" class="cardImg">
+                    <h5 class="cardText" id="lowText"></h5>
+                </div>
+                <div class="windCard">
+                        <img src="assets/windy.png" alt="" class="cardImg">
+                    <h5 class="cardText" id="windText"></h5>
+                </div>
+                <div class="pressureCard">
+                        <img src="assets/pressure.png" alt="" class="cardImg">
+                    <h5 class="cardText" id="pressureText"></h5>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
